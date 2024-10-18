@@ -1,0 +1,16 @@
+C:\Users\Erick\source\repos\GastosForms\bin\Debug\net8.0-windows\GastosForms.exe
+C:\Users\Erick\source\repos\GastosForms\bin\Debug\net8.0-windows\GastosForms.deps.json
+C:\Users\Erick\source\repos\GastosForms\bin\Debug\net8.0-windows\GastosForms.runtimeconfig.json
+C:\Users\Erick\source\repos\GastosForms\bin\Debug\net8.0-windows\GastosForms.dll
+C:\Users\Erick\source\repos\GastosForms\bin\Debug\net8.0-windows\GastosForms.pdb
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.Form1.resources
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.csproj.GenerateResource.cache
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.AssemblyInfoInputs.cache
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.AssemblyInfo.cs
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.csproj.CoreCompileInputs.cache
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.dll
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\refint\GastosForms.dll
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.pdb
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\GastosForms.genruntimeconfig.cache
+C:\Users\Erick\source\repos\GastosForms\obj\Debug\net8.0-windows\ref\GastosForms.dll
