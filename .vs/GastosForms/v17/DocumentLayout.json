@@ -3,12 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\Erick\\source\\repos\\GastosForms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\mvc\\controller\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:mvc\\controller\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\mvc\\models\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:mvc\\models\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Erick\\AppData\\Local\\Temp\\.vsdbgsrc\\208412360f7b2651b2516b11b08c0e5ca70e748d75604938c4acc6b022a415fe\\Application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Erick\\AppData\\Local\\Temp\\.vsdbgsrc\\0a315799d53c742d7c1ef58762e6369337bdc04a7855ab19bc51238c86d8370c\\NativeWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\objetos\\contas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:objetos\\contas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\mvc\\view\\viewhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:mvc\\view\\viewhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\mvc\\view\\viewhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:mvc\\view\\viewhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|c:\\users\\erick\\source\\repos\\gastosforms\\mvc\\view\\iviewhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CF184C-001C-40CC-B697-09F9369A0A2E}|GastosForms.csproj|solutionrelative:mvc\\view\\iviewhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +44,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
+              "DocumentIndex": 2,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\AppData\\Local\\Temp\\.vsdbgsrc\\208412360f7b2651b2516b11b08c0e5ca70e748d75604938c4acc6b022a415fe\\Application.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\208412360f7b2651b2516b11b08c0e5ca70e748d75604938c4acc6b022a415fe\\Application.cs",
+              "ToolTip": "C:\\Users\\Erick\\AppData\\Local\\Temp\\.vsdbgsrc\\208412360f7b2651b2516b11b08c0e5ca70e748d75604938c4acc6b022a415fe\\Application.cs [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\208412360f7b2651b2516b11b08c0e5ca70e748d75604938c4acc6b022a415fe\\Application.cs [Somente Leitura]",
+              "ViewState": "AQIAAHUKAAAAAAAAAAAvwIUKAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:55:44.98Z",
+              "WhenOpened": "2024-10-21T16:43:01.596Z",
+              "EditorCaption": " [Somente Leitura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NativeWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\AppData\\Local\\Temp\\.vsdbgsrc\\0a315799d53c742d7c1ef58762e6369337bdc04a7855ab19bc51238c86d8370c\\NativeWindow.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a315799d53c742d7c1ef58762e6369337bdc04a7855ab19bc51238c86d8370c\\NativeWindow.cs",
+              "ToolTip": "C:\\Users\\Erick\\AppData\\Local\\Temp\\.vsdbgsrc\\0a315799d53c742d7c1ef58762e6369337bdc04a7855ab19bc51238c86d8370c\\NativeWindow.cs [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a315799d53c742d7c1ef58762e6369337bdc04a7855ab19bc51238c86d8370c\\NativeWindow.cs [Somente Leitura]",
+              "ViewState": "AQIAAK0BAAAAAAAAAAAQwL8BAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T16:42:20.408Z",
+              "EditorCaption": " [Somente Leitura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Contas.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\Objetos\\Contas.cs",
+              "RelativeDocumentMoniker": "Objetos\\Contas.cs",
+              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\Objetos\\Contas.cs",
+              "RelativeToolTip": "Objetos\\Contas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAMwA8AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T15:46:44.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewHome.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\View\\ViewHome.cs",
+              "RelativeDocumentMoniker": "MVC\\View\\ViewHome.cs",
+              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\View\\ViewHome.cs",
+              "RelativeToolTip": "MVC\\View\\ViewHome.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAEwB0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T15:43:46.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\Form1.cs [Projeto]",
-              "RelativeToolTip": "Form1.cs [Projeto]",
+              "Title": "HomeModel.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\Controller\\HomeModel.cs",
+              "RelativeDocumentMoniker": "MVC\\Controller\\HomeModel.cs",
+              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\Controller\\HomeModel.cs",
+              "RelativeToolTip": "MVC\\Controller\\HomeModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:52:48.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\Models\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVC\\Models\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\Models\\HomeController.cs",
+              "RelativeToolTip": "MVC\\Models\\HomeController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:51:16.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IViewHome.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\View\\IViewHome.cs",
+              "RelativeDocumentMoniker": "MVC\\View\\IViewHome.cs",
+              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\View\\IViewHome.cs",
+              "RelativeToolTip": "MVC\\View\\IViewHome.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:49:48.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:46:31.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ViewHome.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\View\\ViewHome.cs",
+              "RelativeDocumentMoniker": "MVC\\View\\ViewHome.cs",
+              "ToolTip": "C:\\Users\\Erick\\source\\repos\\GastosForms\\MVC\\View\\ViewHome.cs [Projeto]",
+              "RelativeToolTip": "MVC\\View\\ViewHome.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T14:50:38.585Z",
               "EditorCaption": " [Projeto]"

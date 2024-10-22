@@ -1,3 +1,6 @@
+using GastosForms.MVC.Controller;
+using GastosForms.MVC.Models;
+
 namespace GastosForms
 {
     internal static class Program
@@ -8,10 +11,11 @@ namespace GastosForms
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            ViewHome view = new ViewHome();
+            view.Visible = false;
+            HomeModel model = new HomeModel();
+            HomeController controller = new HomeController(view,model);
+            view.ShowDialog();
         }
     }
 }
