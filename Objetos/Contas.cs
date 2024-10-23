@@ -6,19 +6,52 @@ using System.Threading.Tasks;
 
 namespace GastosForms.Objetos
 {
-    public class Contas
+    public class Contas : ContasRec
     {
-        public double Valor { get; set; }
-        public string Descricao { get; set; }
-        public int tipo { get; set; }
-        public DateTime Data { get; set; }
-
+        
         public Contas(double valor, string descricao, int tipo, DateTime data)
         {
-            Valor = valor;
-            Descricao = descricao;
+            this.valor = valor;
+            titulo = descricao;
             this.tipo = tipo;
-            Data = data;
+            this.data = data;
         }
+
+        public Contas(int id, double valor, string descricao, int tipo, DateTime data)
+        {
+            this.id = id;
+            this.valor = valor;
+            titulo = descricao;
+            this.tipo = tipo;
+            this.data = data;
+        }
+
+        public Contas()
+        {
+        }
+    }
+    public class ContasList<T>
+    {
+        public List<T> contasLista { get; set; }
+
+        public ContasList()
+        {
+            contasLista = new List<T>();
+        }
+    }
+    public class ContasRec : ContasEnv
+    {
+        public int id { get; set; }
+    }
+    public class ContasEnv
+    {
+        public double valor { get; set; }
+        public string titulo { get; set; }
+        public int tipo { get; set; }
+        public DateTime data { get; set; }
+    }
+    public class ContasList
+    {
+        public List<ContasRec> contasLista { get; set; }
     }
 }
