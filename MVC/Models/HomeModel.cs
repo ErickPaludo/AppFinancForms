@@ -46,9 +46,9 @@ namespace GastosForms.MVC.Models
         {
             return Contas.Where(c => c.tipo == type).Sum(c => c.valor); ;
         }
-        public async void AtualizaContas(ContasRec objeto)
+        public async void AtualizaContas(ContasEnv objeto,int id)
         {
-           await RecHttp.ExecutaRec("PUT",objeto);
+           await RecHttp.ExecutaRec("PUT",objeto,id:id);
         }
     }
 }

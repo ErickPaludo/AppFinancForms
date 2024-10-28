@@ -1,4 +1,7 @@
-﻿namespace GastosForms
+﻿using MetroFramework;
+using MetroFramework.Controls;
+
+namespace GastosForms
 {
     partial class ViewHome
     {
@@ -32,33 +35,36 @@
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             textGasto = new TextBox();
-            radioDebito = new RadioButton();
-            radioCredito = new RadioButton();
-            radioAlimentacao = new RadioButton();
-            label1 = new Label();
-            label2 = new Label();
-            buttonRegistro = new Button();
+            radioDebito = new MetroRadioButton();
+            radioCredito = new MetroRadioButton();
+            radioAlimentacao = new MetroRadioButton();
+            label1 = new MetroLabel();
+            label2 = new MetroLabel();
+            buttonRegistro = new MetroButton();
             dataTableGastos = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
-            buttonAtualiza = new Button();
+            buttonAtualiza = new MetroButton();
             textDesc = new TextBox();
             textDebito = new TextBox();
             textCredito = new TextBox();
             textAlimentacao = new TextBox();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
+            label3 = new MetroLabel();
+            label4 = new MetroLabel();
+            label5 = new MetroLabel();
             textId = new TextBox();
+            buttonCancelar = new MetroButton();
+            buttonDeletar = new MetroButton();
             ((System.ComponentModel.ISupportInitialize)dataTableGastos).BeginInit();
             SuspendLayout();
             // 
             // textGasto
             // 
-            textGasto.Location = new Point(12, 39);
+            textGasto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            textGasto.Location = new Point(26, 138);
             textGasto.Name = "textGasto";
             textGasto.Size = new Size(143, 27);
             textGasto.TabIndex = 0;
@@ -68,69 +74,77 @@
             radioDebito.AutoSize = true;
             radioDebito.Checked = true;
             radioDebito.ForeColor = SystemColors.ActiveCaptionText;
-            radioDebito.Location = new Point(12, 72);
+            radioDebito.Location = new Point(274, 119);
             radioDebito.Name = "radioDebito";
-            radioDebito.Size = new Size(73, 24);
+            radioDebito.Size = new Size(58, 15);
             radioDebito.TabIndex = 1;
             radioDebito.TabStop = true;
             radioDebito.Text = "Débito";
+            radioDebito.UseSelectable = true;
             radioDebito.UseVisualStyleBackColor = true;
             // 
             // radioCredito
             // 
             radioCredito.AutoSize = true;
-            radioCredito.Location = new Point(12, 102);
+            radioCredito.Location = new Point(392, 119);
             radioCredito.Name = "radioCredito";
-            radioCredito.Size = new Size(76, 24);
+            radioCredito.Size = new Size(62, 15);
             radioCredito.TabIndex = 2;
             radioCredito.TabStop = true;
             radioCredito.Text = "Crédito";
+            radioCredito.UseSelectable = true;
             radioCredito.UseVisualStyleBackColor = true;
             // 
             // radioAlimentacao
             // 
             radioAlimentacao.AutoSize = true;
-            radioAlimentacao.Location = new Point(12, 132);
+            radioAlimentacao.Location = new Point(510, 119);
             radioAlimentacao.Name = "radioAlimentacao";
-            radioAlimentacao.Size = new Size(143, 24);
+            radioAlimentacao.Size = new Size(114, 15);
             radioAlimentacao.TabIndex = 3;
             radioAlimentacao.TabStop = true;
             radioAlimentacao.Text = "Vale Alimentação";
+            radioAlimentacao.UseSelectable = true;
             radioAlimentacao.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(26, 115);
             label1.Name = "label1";
-            label1.Size = new Size(84, 20);
+            label1.Size = new Size(74, 19);
             label1.TabIndex = 4;
             label1.Text = "Valor gasto";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(161, 9);
+            label2.Location = new Point(26, 62);
             label2.Name = "label2";
-            label2.Size = new Size(74, 20);
+            label2.Size = new Size(41, 19);
             label2.TabIndex = 5;
-            label2.Text = "Descrição";
+            label2.Text = "Título";
             // 
             // buttonRegistro
             // 
-            buttonRegistro.Location = new Point(211, 121);
+            buttonRegistro.Location = new Point(26, 171);
             buttonRegistro.Name = "buttonRegistro";
-            buttonRegistro.Size = new Size(158, 35);
+            buttonRegistro.Size = new Size(143, 35);
             buttonRegistro.TabIndex = 7;
             buttonRegistro.Text = "Registre";
+            buttonRegistro.UseCompatibleTextRendering = true;
+            buttonRegistro.UseSelectable = true;
             buttonRegistro.UseVisualStyleBackColor = true;
             buttonRegistro.Click += CadastroContas;
             // 
             // dataTableGastos
             // 
+            dataTableGastos.AllowUserToAddRows = false;
             dataTableGastos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataTableGastos.BackgroundColor = SystemColors.ButtonHighlight;
+            dataTableGastos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.BackColor = SystemColors.ButtonHighlight;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 11.25F);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
@@ -147,11 +161,11 @@
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dataTableGastos.DefaultCellStyle = dataGridViewCellStyle3;
-            dataTableGastos.Location = new Point(12, 197);
+            dataTableGastos.Location = new Point(26, 249);
             dataTableGastos.Name = "dataTableGastos";
             dataTableGastos.ReadOnly = true;
             dataTableGastos.RowHeadersVisible = false;
-            dataTableGastos.Size = new Size(913, 310);
+            dataTableGastos.Size = new Size(888, 343);
             dataTableGastos.TabIndex = 8;
             dataTableGastos.CellDoubleClick += SelecionaGasto;
             // 
@@ -199,38 +213,45 @@
             // 
             // buttonAtualiza
             // 
-            buttonAtualiza.Location = new Point(809, 139);
+            buttonAtualiza.ImageKey = "(nenhum)";
+            buttonAtualiza.Location = new Point(798, 195);
             buttonAtualiza.Name = "buttonAtualiza";
             buttonAtualiza.Size = new Size(116, 35);
             buttonAtualiza.TabIndex = 9;
             buttonAtualiza.Text = "Atualiza";
+            buttonAtualiza.UseCompatibleTextRendering = true;
+            buttonAtualiza.UseSelectable = true;
             buttonAtualiza.UseVisualStyleBackColor = true;
             buttonAtualiza.Click += Atualiza;
             // 
             // textDesc
             // 
-            textDesc.Location = new Point(161, 39);
+            textDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            textDesc.Location = new Point(26, 85);
             textDesc.Name = "textDesc";
             textDesc.Size = new Size(228, 27);
             textDesc.TabIndex = 10;
             // 
             // textDebito
             // 
-            textDebito.Location = new Point(499, 37);
+            textDebito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            textDebito.Location = new Point(274, 85);
             textDebito.Name = "textDebito";
             textDebito.Size = new Size(112, 27);
             textDebito.TabIndex = 11;
             // 
             // textCredito
             // 
-            textCredito.Location = new Point(497, 101);
+            textCredito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            textCredito.Location = new Point(392, 85);
             textCredito.Name = "textCredito";
             textCredito.Size = new Size(112, 27);
             textCredito.TabIndex = 12;
             // 
             // textAlimentacao
             // 
-            textAlimentacao.Location = new Point(499, 164);
+            textAlimentacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            textAlimentacao.Location = new Point(510, 85);
             textAlimentacao.Name = "textAlimentacao";
             textAlimentacao.Size = new Size(112, 27);
             textAlimentacao.TabIndex = 13;
@@ -238,43 +259,72 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(497, 9);
+            label3.Location = new Point(274, 63);
             label3.Name = "label3";
-            label3.Size = new Size(55, 20);
+            label3.Size = new Size(48, 19);
             label3.TabIndex = 14;
             label3.Text = "Débito";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(497, 73);
+            label4.Location = new Point(392, 62);
             label4.Name = "label4";
-            label4.Size = new Size(58, 20);
+            label4.Size = new Size(53, 19);
             label4.TabIndex = 15;
             label4.Text = "Crédito";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(499, 136);
+            label5.Location = new Point(510, 59);
             label5.Name = "label5";
-            label5.Size = new Size(93, 20);
+            label5.Size = new Size(82, 19);
             label5.TabIndex = 16;
             label5.Text = "Alimentação";
             // 
             // textId
             // 
-            textId.Location = new Point(12, 164);
+            textId.Location = new Point(0, 0);
             textId.Name = "textId";
-            textId.Size = new Size(45, 27);
-            textId.TabIndex = 17;
+            textId.Size = new Size(100, 27);
+            textId.TabIndex = 0;
+            // 
+            // buttonCancelar
+            // 
+            buttonCancelar.Location = new Point(26, 212);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(65, 31);
+            buttonCancelar.TabIndex = 18;
+            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.UseCompatibleTextRendering = true;
+            buttonCancelar.UseSelectable = true;
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Visible = false;
+            buttonCancelar.Click += CancelaEdit;
+            // 
+            // buttonDeletar
+            // 
+            buttonDeletar.ForeColor = Color.Red;
+            buttonDeletar.Location = new Point(104, 212);
+            buttonDeletar.Name = "buttonDeletar";
+            buttonDeletar.Size = new Size(65, 31);
+            buttonDeletar.TabIndex = 19;
+            buttonDeletar.Text = "Deletar";
+            buttonDeletar.UseCompatibleTextRendering = true;
+            buttonDeletar.UseSelectable = true;
+            buttonDeletar.UseVisualStyleBackColor = true;
+            buttonDeletar.Visible = false;
+            buttonDeletar.Click += Deleta;
             // 
             // ViewHome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(937, 519);
-            Controls.Add(textId);
+            ClientSize = new Size(937, 606);
+            Controls.Add(buttonDeletar);
+            Controls.Add(buttonCancelar);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -292,7 +342,7 @@
             Controls.Add(radioDebito);
             Controls.Add(textGasto);
             Name = "ViewHome";
-            Text = "Form1";
+            Text = "Controle de Gastos";
             ((System.ComponentModel.ISupportInitialize)dataTableGastos).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -301,26 +351,28 @@
         #endregion
 
         private TextBox textGasto;
-        private RadioButton radioDebito;
-        private RadioButton radioCredito;
-        private RadioButton radioAlimentacao;
-        private Label label1;
-        private Label label2;
-        private Button buttonRegistro;
+        private MetroRadioButton radioDebito;
+        private MetroRadioButton radioCredito;
+        private MetroRadioButton radioAlimentacao;
+        private MetroLabel label1;
+        private MetroLabel label2;
+        private MetroButton buttonRegistro;
         private DataGridView dataTableGastos;
-        private Button buttonAtualiza;
+        private MetroButton buttonAtualiza;
         private TextBox textDesc;
         private TextBox textDebito;
         private TextBox textCredito;
         private TextBox textAlimentacao;
-        private Label label3;
-        private Label label4;
-        private Label label5;
+        private MetroLabel label3;
+        private MetroLabel label4;
+        private MetroLabel label5;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column5;
         private TextBox textId;
+        private MetroButton buttonCancelar;
+        private MetroButton buttonDeletar;
     }
 }

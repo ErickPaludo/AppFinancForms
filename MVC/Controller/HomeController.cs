@@ -65,16 +65,17 @@ namespace GastosForms.MVC.Controller
                     }
                     else
                     {
-                        ContasRec obj =  new ContasRec{id = Convert.ToInt32(view.TxtId.Text), valor = Convert.ToDouble(valor), titulo = desc, tipo = tipo, data = date};
+                        ContasEnv obj = new ContasEnv { valor = Convert.ToDouble(valor), titulo = desc, tipo = tipo, data = date };
 
-                        model.AtualizaContas(obj);
+                        model.AtualizaContas(obj, Convert.ToInt32(view.TxtId.Text));
                     }
                 }
                 else
                 {
                     MessageBox.Show("Erro!", "Alguns capos estão inválidos, verifique novamente!");
                 }
-
+                view.Cancelar.Visible = false;
+                view.Deletar.Visible = false;
                 await Atualiza();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
@@ -83,11 +84,12 @@ namespace GastosForms.MVC.Controller
         public async Task SelecionaConta(int id)
         {
             ContasList objeto = await RecHttp.ExecutaRec("GET_ID", id);
-
+            view.Cancelar.Visible = true;
+            view.Deletar.Visible = true;
             foreach (var obj in objeto.contasLista)
             {
                 view.Valor.Text = obj.valor.ToString();
-                view.Descicao.Text = obj.titulo;
+                view.Titulo.Text = obj.titulo;
                 view.TxtId.Text = obj.id.ToString();
                 switch (obj.tipo)
                 {
@@ -106,7 +108,18 @@ namespace GastosForms.MVC.Controller
             }
 
         }
-
+        public async Task Delete()
+        {
+            DialogResult msg = MessageBox.Show("Deseja deletar esta conta?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes)
+            {
+                await RecHttp.ExecutaRec("DELETE", id: Convert.ToInt32(view.TxtId.Text));
+                Clear();
+                await Atualiza();
+                view.Cancelar.Visible = false;
+                view.Deletar.Visible = false;
+            }
+        }
         public async Task Atualiza()
         {
             Clear();
@@ -124,12 +137,23 @@ namespace GastosForms.MVC.Controller
         {
             view.TabelaGastos.Rows.Clear();
             view.Valor.Text = string.Empty;
-            view.Descicao.Text = string.Empty;
-            view.Descicao.IsAccessible = true;
+            view.Titulo.Text = string.Empty;
+            view.Titulo.IsAccessible = true;
             view.TxtCredito.Text = string.Empty;
             view.TxtDebito.Text = string.Empty;
             view.TxtAlimentacao.Text = string.Empty;
             view.TxtId.Text = string.Empty;
+        }
+        public void Cancelar()
+        {
+            DialogResult msg = MessageBox.Show("Deseja cancelar a operação?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes)
+            {
+                Clear();
+                Atualiza();
+                view.Cancelar.Visible = false;
+                view.Deletar.Visible = false;
+            }
         }
     }
 }

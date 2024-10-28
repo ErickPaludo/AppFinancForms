@@ -13,14 +13,14 @@ namespace GastosForms
 {
     public class RecHttp
     {
-        public static async Task<dynamic> ExecutaRec(string metodo, dynamic obj = null)
+        public static async Task<dynamic> ExecutaRec(string metodo, dynamic obj = null,int id = 0)
         {
             try
             {
 
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new System.Uri("https://localhost:7138/");
+                    client.BaseAddress = new System.Uri("http://25.49.76.159:8090");
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -64,22 +64,29 @@ namespace GastosForms
                             }
                             break;
                         case "PUT":
-                            var contasobjatlz = new ContasRec
+                            var contasobjatlz = new ContasEnv
                             {
                                 valor = obj.valor,
                                 titulo = obj.titulo,
                                 tipo = obj.tipo,
                                 data = obj.data,
-                                id = obj.id
                             };
 
-                            response = await client.PostAsJsonAsync("Gastos/AtualizaContas", contasobjatlz);
+                            response = await client.PutAsJsonAsync($"Gastos/AtualizaContas/{id}", contasobjatlz);
                             if (response.IsSuccessStatusCode)
                             {
                                 return "";
                             }
                             break;
+                        case "DELETE":
 
+                            response = await client.DeleteAsync($"Gastos/DeleteContas?id={id}");
+                            if (response.IsSuccessStatusCode)
+                            {
+                                return "";
+                            }
+
+                            break;
                     }
                 }
                 return "";
