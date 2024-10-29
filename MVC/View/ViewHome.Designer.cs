@@ -64,20 +64,25 @@ namespace GastosForms
             // textGasto
             // 
             textGasto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            textGasto.Location = new Point(26, 138);
+            textGasto.Cursor = Cursors.Hand;
+            textGasto.Location = new Point(23, 109);
+            textGasto.Margin = new Padding(3, 2, 3, 2);
             textGasto.Name = "textGasto";
-            textGasto.Size = new Size(143, 27);
-            textGasto.TabIndex = 0;
+            textGasto.PlaceholderText = "R$00,00";
+            textGasto.Size = new Size(125, 23);
+            textGasto.TabIndex = 2;
             // 
             // radioDebito
             // 
             radioDebito.AutoSize = true;
             radioDebito.Checked = true;
             radioDebito.ForeColor = SystemColors.ActiveCaptionText;
-            radioDebito.Location = new Point(274, 119);
+            radioDebito.Location = new Point(240, 93);
+            radioDebito.Margin = new Padding(3, 2, 3, 2);
             radioDebito.Name = "radioDebito";
             radioDebito.Size = new Size(58, 15);
-            radioDebito.TabIndex = 1;
+            radioDebito.Style = MetroColorStyle.Green;
+            radioDebito.TabIndex = 3;
             radioDebito.TabStop = true;
             radioDebito.Text = "Débito";
             radioDebito.UseSelectable = true;
@@ -86,10 +91,12 @@ namespace GastosForms
             // radioCredito
             // 
             radioCredito.AutoSize = true;
-            radioCredito.Location = new Point(392, 119);
+            radioCredito.Location = new Point(343, 93);
+            radioCredito.Margin = new Padding(3, 2, 3, 2);
             radioCredito.Name = "radioCredito";
             radioCredito.Size = new Size(62, 15);
-            radioCredito.TabIndex = 2;
+            radioCredito.Style = MetroColorStyle.Green;
+            radioCredito.TabIndex = 4;
             radioCredito.TabStop = true;
             radioCredito.Text = "Crédito";
             radioCredito.UseSelectable = true;
@@ -98,10 +105,12 @@ namespace GastosForms
             // radioAlimentacao
             // 
             radioAlimentacao.AutoSize = true;
-            radioAlimentacao.Location = new Point(510, 119);
+            radioAlimentacao.Location = new Point(446, 93);
+            radioAlimentacao.Margin = new Padding(3, 2, 3, 2);
             radioAlimentacao.Name = "radioAlimentacao";
             radioAlimentacao.Size = new Size(114, 15);
-            radioAlimentacao.TabIndex = 3;
+            radioAlimentacao.Style = MetroColorStyle.Green;
+            radioAlimentacao.TabIndex = 5;
             radioAlimentacao.TabStop = true;
             radioAlimentacao.Text = "Vale Alimentação";
             radioAlimentacao.UseSelectable = true;
@@ -110,7 +119,7 @@ namespace GastosForms
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(26, 115);
+            label1.Location = new Point(23, 89);
             label1.Name = "label1";
             label1.Size = new Size(74, 19);
             label1.TabIndex = 4;
@@ -119,7 +128,7 @@ namespace GastosForms
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(26, 62);
+            label2.Location = new Point(21, 47);
             label2.Name = "label2";
             label2.Size = new Size(41, 19);
             label2.TabIndex = 5;
@@ -127,14 +136,19 @@ namespace GastosForms
             // 
             // buttonRegistro
             // 
-            buttonRegistro.Location = new Point(26, 171);
+            buttonRegistro.BackColor = Color.FromArgb(0, 192, 0);
+            buttonRegistro.Cursor = Cursors.Hand;
+            buttonRegistro.ForeColor = Color.FromArgb(0, 192, 0);
+            buttonRegistro.Location = new Point(23, 136);
+            buttonRegistro.Margin = new Padding(3, 2, 3, 2);
             buttonRegistro.Name = "buttonRegistro";
-            buttonRegistro.Size = new Size(143, 35);
-            buttonRegistro.TabIndex = 7;
+            buttonRegistro.Size = new Size(125, 26);
+            buttonRegistro.Style = MetroColorStyle.Green;
+            buttonRegistro.TabIndex = 6;
             buttonRegistro.Text = "Registre";
             buttonRegistro.UseCompatibleTextRendering = true;
             buttonRegistro.UseSelectable = true;
-            buttonRegistro.UseVisualStyleBackColor = true;
+            buttonRegistro.UseVisualStyleBackColor = false;
             buttonRegistro.Click += CadastroContas;
             // 
             // dataTableGastos
@@ -157,15 +171,16 @@ namespace GastosForms
             dataGridViewCellStyle3.BackColor = SystemColors.Window;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 11.25F);
             dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionBackColor = Color.ForestGreen;
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dataTableGastos.DefaultCellStyle = dataGridViewCellStyle3;
-            dataTableGastos.Location = new Point(26, 249);
+            dataTableGastos.Location = new Point(23, 196);
+            dataTableGastos.Margin = new Padding(3, 2, 3, 2);
             dataTableGastos.Name = "dataTableGastos";
             dataTableGastos.ReadOnly = true;
             dataTableGastos.RowHeadersVisible = false;
-            dataTableGastos.Size = new Size(888, 343);
+            dataTableGastos.Size = new Size(777, 248);
             dataTableGastos.TabIndex = 8;
             dataTableGastos.CellDoubleClick += SelecionaGasto;
             // 
@@ -213,10 +228,12 @@ namespace GastosForms
             // 
             // buttonAtualiza
             // 
+            buttonAtualiza.Cursor = Cursors.Hand;
             buttonAtualiza.ImageKey = "(nenhum)";
-            buttonAtualiza.Location = new Point(798, 195);
+            buttonAtualiza.Location = new Point(697, 166);
+            buttonAtualiza.Margin = new Padding(3, 2, 3, 2);
             buttonAtualiza.Name = "buttonAtualiza";
-            buttonAtualiza.Size = new Size(116, 35);
+            buttonAtualiza.Size = new Size(102, 26);
             buttonAtualiza.TabIndex = 9;
             buttonAtualiza.Text = "Atualiza";
             buttonAtualiza.UseCompatibleTextRendering = true;
@@ -227,39 +244,50 @@ namespace GastosForms
             // textDesc
             // 
             textDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            textDesc.Location = new Point(26, 85);
+            textDesc.Cursor = Cursors.Hand;
+            textDesc.Location = new Point(23, 68);
+            textDesc.Margin = new Padding(3, 2, 3, 2);
             textDesc.Name = "textDesc";
-            textDesc.Size = new Size(228, 27);
-            textDesc.TabIndex = 10;
+            textDesc.Size = new Size(200, 23);
+            textDesc.TabIndex = 1;
             // 
             // textDebito
             // 
             textDebito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            textDebito.Location = new Point(274, 85);
+            textDebito.Location = new Point(240, 68);
+            textDebito.Margin = new Padding(3, 2, 3, 2);
             textDebito.Name = "textDebito";
-            textDebito.Size = new Size(112, 27);
+            textDebito.ReadOnly = true;
+            textDebito.Size = new Size(98, 23);
             textDebito.TabIndex = 11;
+            textDebito.TextAlign = HorizontalAlignment.Center;
             // 
             // textCredito
             // 
             textCredito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            textCredito.Location = new Point(392, 85);
+            textCredito.Location = new Point(343, 68);
+            textCredito.Margin = new Padding(3, 2, 3, 2);
             textCredito.Name = "textCredito";
-            textCredito.Size = new Size(112, 27);
+            textCredito.ReadOnly = true;
+            textCredito.Size = new Size(98, 23);
             textCredito.TabIndex = 12;
+            textCredito.TextAlign = HorizontalAlignment.Center;
             // 
             // textAlimentacao
             // 
             textAlimentacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            textAlimentacao.Location = new Point(510, 85);
+            textAlimentacao.Location = new Point(446, 68);
+            textAlimentacao.Margin = new Padding(3, 2, 3, 2);
             textAlimentacao.Name = "textAlimentacao";
-            textAlimentacao.Size = new Size(112, 27);
+            textAlimentacao.ReadOnly = true;
+            textAlimentacao.Size = new Size(98, 23);
             textAlimentacao.TabIndex = 13;
+            textAlimentacao.TextAlign = HorizontalAlignment.Center;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(274, 63);
+            label3.Location = new Point(240, 47);
             label3.Name = "label3";
             label3.Size = new Size(48, 19);
             label3.TabIndex = 14;
@@ -269,7 +297,7 @@ namespace GastosForms
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(392, 62);
+            label4.Location = new Point(343, 47);
             label4.Name = "label4";
             label4.Size = new Size(53, 19);
             label4.TabIndex = 15;
@@ -278,7 +306,7 @@ namespace GastosForms
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(510, 59);
+            label5.Location = new Point(446, 47);
             label5.Name = "label5";
             label5.Size = new Size(82, 19);
             label5.TabIndex = 16;
@@ -288,15 +316,17 @@ namespace GastosForms
             // 
             textId.Location = new Point(0, 0);
             textId.Name = "textId";
-            textId.Size = new Size(100, 27);
+            textId.Size = new Size(100, 23);
             textId.TabIndex = 0;
             // 
             // buttonCancelar
             // 
-            buttonCancelar.Location = new Point(26, 212);
+            buttonCancelar.Cursor = Cursors.Hand;
+            buttonCancelar.Location = new Point(23, 166);
+            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(65, 31);
-            buttonCancelar.TabIndex = 18;
+            buttonCancelar.Size = new Size(57, 23);
+            buttonCancelar.TabIndex = 7;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseCompatibleTextRendering = true;
             buttonCancelar.UseSelectable = true;
@@ -306,23 +336,25 @@ namespace GastosForms
             // 
             // buttonDeletar
             // 
+            buttonDeletar.Cursor = Cursors.Hand;
             buttonDeletar.ForeColor = Color.Red;
-            buttonDeletar.Location = new Point(104, 212);
+            buttonDeletar.Location = new Point(91, 166);
+            buttonDeletar.Margin = new Padding(3, 2, 3, 2);
             buttonDeletar.Name = "buttonDeletar";
-            buttonDeletar.Size = new Size(65, 31);
-            buttonDeletar.TabIndex = 19;
+            buttonDeletar.Size = new Size(57, 23);
+            buttonDeletar.Style = MetroColorStyle.Red;
+            buttonDeletar.TabIndex = 8;
             buttonDeletar.Text = "Deletar";
-            buttonDeletar.UseCompatibleTextRendering = true;
             buttonDeletar.UseSelectable = true;
-            buttonDeletar.UseVisualStyleBackColor = true;
+            buttonDeletar.UseVisualStyleBackColor = false;
             buttonDeletar.Visible = false;
             buttonDeletar.Click += Deleta;
             // 
             // ViewHome
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(937, 606);
+            ClientSize = new Size(820, 454);
             Controls.Add(buttonDeletar);
             Controls.Add(buttonCancelar);
             Controls.Add(label5);
@@ -341,7 +373,10 @@ namespace GastosForms
             Controls.Add(radioCredito);
             Controls.Add(radioDebito);
             Controls.Add(textGasto);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ViewHome";
+            Padding = new Padding(18, 60, 18, 15);
+            Style = MetroColorStyle.Green;
             Text = "Controle de Gastos";
             ((System.ComponentModel.ISupportInitialize)dataTableGastos).EndInit();
             ResumeLayout(false);

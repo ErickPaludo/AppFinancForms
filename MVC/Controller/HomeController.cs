@@ -72,7 +72,7 @@ namespace GastosForms.MVC.Controller
                 }
                 else
                 {
-                    MessageBox.Show("Erro!", "Alguns capos estão inválidos, verifique novamente!");
+                    MessageBox.Show("Alguns capos estão inválidos, verifique novamente!", "Erro!");
                 }
                 view.Cancelar.Visible = false;
                 view.Deletar.Visible = false;
@@ -128,9 +128,9 @@ namespace GastosForms.MVC.Controller
             {
                 view.TabelaGastos.Rows.Add(obj.titulo, Util.Desconverter(obj.tipo), obj.valor, obj.data, obj.id);
             }
-            view.TxtDebito.Text = model.Calcula(1).ToString("f2");
-            view.TxtCredito.Text = model.Calcula(2).ToString();
-            view.TxtAlimentacao.Text = model.Calcula(3).ToString();
+            view.TxtDebito.Text = $"R$ {model.Calcula(1).ToString("f2")}";
+            view.TxtCredito.Text = $"R$ {model.Calcula(2).ToString("f2")}";
+            view.TxtAlimentacao.Text = $"R$ {model.Calcula(3).ToString("f2")}";
         }
 
         public void Clear()

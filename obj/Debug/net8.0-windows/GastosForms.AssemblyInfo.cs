@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GastosForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+558f347608fcc5e6fa822d02b927fdca24d3a24c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e28ed8cab667d5890dbe6f1038c80d1435d7885e")]
 [assembly: System.Reflection.AssemblyProductAttribute("GastosForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GastosForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
