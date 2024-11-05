@@ -26,7 +26,8 @@ namespace GastosForms
         public TextBox TxtAlimentacao { get { return textAlimentacao; } set { textAlimentacao = value; } }
         public TextBox TxtId { get { return textId; } set { textId = value; } }
         public MetroButton Cancelar { get { return buttonCancelar; } set { buttonCancelar = value; } }
-        public MetroButton Deletar { get { return buttonDeletar; } set { buttonDeletar = value; } }
+        public MetroButton Deletar { get { return buttonDeletar; } set { buttonDeletar = value; } } 
+        public DateTimePicker Data { get { return data; } set { data = value; } }
 
 
         public void SetContoller(HomeController controller)

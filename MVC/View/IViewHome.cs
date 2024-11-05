@@ -25,5 +25,6 @@ namespace GastosForms.MVC.View
         public TextBox TxtId { get; set; }
         public MetroButton Cancelar { get; set; }
         public MetroButton Deletar { get; set; }
+        public DateTimePicker Data { get;set;}
     }
 }

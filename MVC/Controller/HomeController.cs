@@ -40,7 +40,6 @@ namespace GastosForms.MVC.Controller
         {
             try
             {
-                DateTime date = DateTime.Now;
                 int tipo = 0;
 
                 if (debito.Checked)
@@ -61,11 +60,11 @@ namespace GastosForms.MVC.Controller
                 {
                     if (string.IsNullOrEmpty(view.TxtId.Text))
                     {
-                        await model.EnviaContas(new Contas(Convert.ToDouble(valor), desc, tipo, date));
+                        await model.EnviaContas(new Contas(Convert.ToDouble(valor), desc, tipo, Convert.ToDateTime(view.Data.Text)));
                     }
                     else
                     {
-                        ContasEnv obj = new ContasEnv { valor = Convert.ToDouble(valor), titulo = desc, tipo = tipo, data = date };
+                        ContasEnv obj = new ContasEnv { valor = Convert.ToDouble(valor), titulo = desc, tipo = tipo, data = Convert.ToDateTime(view.Data.Text) };
 
                         model.AtualizaContas(obj, Convert.ToInt32(view.TxtId.Text));
                     }
@@ -91,6 +90,7 @@ namespace GastosForms.MVC.Controller
                 view.Valor.Text = obj.valor.ToString();
                 view.Titulo.Text = obj.titulo;
                 view.TxtId.Text = obj.id.ToString();
+                view.Data.Text = obj.data.ToString();
                 switch (obj.tipo)
                 {
                     case 1:

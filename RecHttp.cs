@@ -20,7 +20,7 @@ namespace GastosForms
 
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new System.Uri("http://25.49.76.159:8090");
+                    client.BaseAddress = new System.Uri("http://25.49.76.159:9000");
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -29,11 +29,11 @@ namespace GastosForms
                     {
                         case "GET":
                             response = await client.GetAsync("Gastos/ReturnContas");
-                            ContasList objeto = new ContasList();
+                      //      ContasList objeto = new ContasList();
                             if (response.IsSuccessStatusCode)
                             {
                                 var contas = await response.Content.ReadAsStringAsync();
-                                objeto = JsonConvert.DeserializeObject<ContasList>(contas);
+                             var objeto = JsonConvert.DeserializeObject<ContasList>(contas);
                                 return objeto;
                             }
                             break;
